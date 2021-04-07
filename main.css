@@ -1,0 +1,318 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #777778;
+    text-align: justify;}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    color: #424243;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 26px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.heading > div {
+    color: #424243;  
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.aside-widgets a:hover {
+    color:#fff;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+}
+
+aside {
+    width: 28%;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 0 auto;
+    margin-right: 60px;
+    color:#424243;
+    background-color: #bed8ec;
+}
+
+.main {
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 0 auto;
+    justify-content: flex-start;
+    margin-right: 60px;
+}
+
+.grey-dot {
+    display: inline-flex;
+    width:10px;
+    height:10px;
+    background-color: #d0d1d3;
+    border-radius: 100%;
+    margin-left: 8px;
+}
+
+.black-dot {
+    display: inline-flex;
+    width:10px;
+    height:10px;
+    background-color: #424243;
+    border-radius: 100%;
+    margin-left: 8px;
+}
+
+.white-dot {
+    display: inline-flex;
+    width:10px;
+    height:10px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-left: 8px;
+}
+
+/* ASIDE STYLES */
+
+aside h3 {
+    text-align: center;
+    background-color: #424243;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+.author-box {
+    padding: 0 20px 60px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.avatar img {
+    width: 160px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.author-name {
+    text-align: center;
+}
+
+.author-name div {
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.author-name .last-name {
+    font-weight: bold;
+}
+
+.author-name .position {
+    font-size: 14px;
+}
+
+.aside-widgets {
+    padding: 0 40px 20px;
+}
+
+.widget {
+    padding-bottom: 20px;
+}
+
+.widget:first-of-type {
+    margin-top: -32px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li::before {
+    content:"";
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+li.address::before{
+    background: url(img/адрес@288x.png) no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+
+
+}
+li.phone::before {
+    background: url(img/тел@288x.png) no-repeat center;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+}
+
+li.email::before {
+    background: url(img/почта@288x.png) no-repeat center;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+
+li.website::before {
+    background: url(img/сайт@288x.png) no-repeat center;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+
+li.facebook::before {
+    background: url(img/ФБ@288x.png) no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+li.twitter::before {
+    background: url(img/твитер@288x.png) no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+li.instagram::before {
+    background: url(img/инста@288x.png) no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+li.youtube::before {
+    background: url(img/ютуб@288x.png) no-repeat center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+.language > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+.hobbies >div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hobbies p {
+    margin-top: 0;
+}
+
+/*MAIN STYLES*/
+
+section {
+    width: 100%;
+}
+
+.heading {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.heading h3 {
+    margin-bottom: 0;
+}
+
+.section-heading hr {
+    height: 2px;
+    background-color: #424243;
+    border: none;
+}
+.section-heading::before {
+    content:"";
+    display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    position: relative;
+    top: -3px;
+}
+
+section:nth-child(1) .section-heading::before {
+    background: url("img/про меня@288x.png") no-repeat center;
+    background-size: contain;
+}
+section:nth-child(2) .section-heading::before {
+    content:"";
+    background: url("img/образование@288x.png") no-repeat center;
+    background-size: contain;
+}
+
+section:nth-child(3) .section-heading::before {
+    content:"";
+    background: url("img/опыт работы@288x.png") no-repeat center;
+    background-size: contain;
+}
+
+section:nth-child(4) .section-heading::before {
+    content:"";
+    background: url("img/навыки@288x.png") no-repeat center;
+    background-size: contain;
+}
+
+.heading h3::before {
+ content: ">";
+ margin-right: 10px;
+}
+
+.skills-container {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.skills > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.skills > div > div {
+    margin-right: 25px;
+}
